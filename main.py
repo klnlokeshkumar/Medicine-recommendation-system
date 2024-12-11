@@ -14,7 +14,7 @@ diets_df = pd.read_csv("datasets/diets.csv")
 # load model from pickle file
 from pathlib import Path
 
-model_path = Path("./assets/svc.pkl")
+model_path = Path("/assets/svc.pkl")
 if model_path.exists():
     svc = pickle.load(open(model_path, "rb"))
 else:
